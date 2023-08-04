@@ -1,0 +1,21 @@
+.header-nosotros {
+  display: flex;
+  justify-content: space-between;
+  background-color: cornsilk;
+  font-size: 25px;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    .container-fluid {
+      .navbar-brand {
+        .logo-nosotros2 {
+          height: 100px;
+          &:hover {
+            transform: scale(2);
+          }
+        }
+      }
+    }
+  }
+}

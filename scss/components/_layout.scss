@@ -60,7 +60,7 @@ section div img {
   max-height: 100%;
 }
 /*Productos*/
-.main-p{
+.main-p {
   .mproducto {
     background-color: rgba(0, 0, 0, 0.212);
     .text-productos {
@@ -73,68 +73,72 @@ section div img {
       font-family: "Petit Formal Script", cursive;
     }
     .galeria {
-        height: auto;
-        width: auto;
-        background-color: rgba(0, 0, 0, 0.212);
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 400px);
-        grid-gap: 25px;
-        .item{
-            width: 100%;
-            background-color: #333;
-            border: 5px solid white;
-            background-size: cover;
-            background-position: center;
-            &:hover{
-            transform: scale(1.05);
-            }
-            }
-            .item1 {
-            background-image:url("../img/messimate.jpg");
-            }
-            .item2{
-            background-image:url("../img/imperial.jpg");
-            }
-            .item3{
-            background-image:url("../img/camionero.jpg");
-            }
-            .item4{
-            background-image:url("../img/bombilla2.png");
-            background-position: center;
-            }
-            .item5{
-            background-image:url("../img/bombillon.jpg");
-            background-size: 320px;
-            }
-            .item6{
-            background-image:url("../img/bombilla-picoloro.jpg");
-            background-size: 320px;
-            }
-            .item7{
-            background-image:url("../img/yerba2.jpg");
-            }
-            .item8{
-            background-image:url("../img/baldo.jpg");
-            }
-            .item9{
-            background-image:url("../img/canariasespecial.jpg");
-            }
+      height: auto;
+      width: auto;
+      background-color: rgba(0, 0, 0, 0.212);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 400px);
+      grid-gap: 25px;
+      .item {
+        width: 100%;
+        background-color: #333;
+        border: 5px solid white;
+        background-size: cover;
+        background-position: center;
+        &:hover {
+          transform: scale(1.05);
         }
       }
-    } 
-  
-  
-  
+      .item1 {
+        background-image: url("../img/messimate.jpg");
+      }
+      .item2 {
+        background-image: url("../img/imperial.jpg");
+      }
+      .item3 {
+        background-image: url("../img/camionero.jpg");
+      }
+      .item4 {
+        background-image: url("../img/bombilla2.png");
+        background-position: center;
+      }
+      .item5 {
+        background-image: url("../img/bombillon.jpg");
+        background-size: 320px;
+      }
+      .item6 {
+        background-image: url("../img/bombilla-picoloro.jpg");
+        background-size: 320px;
+      }
+      .item7 {
+        background-image: url("../img/yerba2.jpg");
+      }
+      .item8 {
+        background-image: url("../img/baldo.jpg");
+      }
+      .item9 {
+        background-image: url("../img/canariasespecial.jpg");
+      }
+    }
+  }
+}
 
 /*Informacion*/
 .video-informacion {
+  h1{
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 3px;
+    margin-top: 40px;
+  }
   .video-informacion1 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    margin-top: 40px;
     .div-informacion {
       display: flex;
       margin: 20px;

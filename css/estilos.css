@@ -74,9 +74,9 @@ section div img {
   max-height: 100%; }
 
 /*Productos*/
-.main-p .mproducto {
+.main-p section .mproducto {
   background-color: rgba(0, 0, 0, 0.212); }
-  .main-p .mproducto .text-productos {
+  .main-p section .mproducto .text-productos {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.212);
     color: white;
@@ -84,44 +84,13 @@ section div img {
     font-size: 25px;
     padding: 50px 20px;
     font-family: "Petit Formal Script", cursive; }
-  .main-p .mproducto .galeria {
-    height: auto;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.212);
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 400px);
-    grid-gap: 25px; }
-    .main-p .mproducto .galeria .item {
-      width: 100%;
-      background-color: #333;
-      border: 5px solid white;
-      background-size: cover;
-      background-position: center; }
-      .main-p .mproducto .galeria .item:hover {
-        transform: scale(1.05); }
-    .main-p .mproducto .galeria .item1 {
-      background-image: url("../img/messimate.jpg"); }
-    .main-p .mproducto .galeria .item2 {
-      background-image: url("../img/imperial.jpg"); }
-    .main-p .mproducto .galeria .item3 {
-      background-image: url("../img/camionero.jpg"); }
-    .main-p .mproducto .galeria .item4 {
-      background-image: url("../img/bombilla2.png");
-      background-position: center; }
-    .main-p .mproducto .galeria .item5 {
-      background-image: url("../img/bombillon.jpg");
-      background-size: 320px; }
-    .main-p .mproducto .galeria .item6 {
-      background-image: url("../img/bombilla-picoloro.jpg");
-      background-size: 320px; }
-    .main-p .mproducto .galeria .item7 {
-      background-image: url("../img/yerba2.jpg"); }
-    .main-p .mproducto .galeria .item8 {
-      background-image: url("../img/baldo.jpg"); }
-    .main-p .mproducto .galeria .item9 {
-      background-image: url("../img/canariasespecial.jpg"); }
+  .main-p section .mproducto .galeria .item {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 590px;
+    border: 5px solid white; }
+    .main-p section .mproducto .galeria .item:hover {
+      transform: scale(1.05); }
 
 /*Informacion*/
 .video-informacion h1 {
@@ -143,6 +112,11 @@ section div img {
     text-align: center;
     flex-direction: column;
     justify-content: space-between; }
+    .video-informacion .video-informacion1 .div-informacion h3 {
+      background-color: cornsilk;
+      border: cornsilk 5px solid;
+      border-radius: 20px;
+      text-align: justify; }
 
 /*Nosotros*/
 .contenedor {
@@ -223,3 +197,7 @@ footer {
     width: 60%;
     align-items: center;
     width: 90%; } }
+
+@media screen and (max-width: 650px) {
+  .main-p section .mproducto .galeria .item {
+    margin-left: 0; } }

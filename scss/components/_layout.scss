@@ -63,68 +63,31 @@ section div img {
 }
 /*Productos*/
 .main-p {
-  .mproducto {
-    background-color: rgba(0, 0, 0, 0.212);
-    .text-productos {
-      text-align: center;
+  section{
+    .mproducto {
       background-color: rgba(0, 0, 0, 0.212);
-      color: white;
-      text-shadow: 0 0 3px;
-      font-size: 25px;
-      padding: 50px 20px;
-      font-family: "Petit Formal Script", cursive;
-    }
-    .galeria {
-      height: auto;
-      width: auto;
-      background-color: rgba(0, 0, 0, 0.212);
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: repeat(3, 400px);
-      grid-gap: 25px;
-      .item {
-        width: 100%;
-        background-color: #333;
-        border: 5px solid white;
-        background-size: cover;
-        background-position: center;
-        &:hover {
-          transform: scale(1.05);
+      .text-productos {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.212);
+        color: white;
+        text-shadow: 0 0 3px;
+        font-size: 25px;
+        padding: 50px 20px;
+        font-family: "Petit Formal Script", cursive;
+      }
+      .galeria {
+        .item {
+          margin-left: 20px;
+          margin-top: 20px;
+          width: 590px;
+          border: 5px solid white;
+          &:hover {
+            transform: scale(1.05);
+          }
         }
       }
-      .item1 {
-        background-image: url("../img/messimate.jpg");
-      }
-      .item2 {
-        background-image: url("../img/imperial.jpg");
-      }
-      .item3 {
-        background-image: url("../img/camionero.jpg");
-      }
-      .item4 {
-        background-image: url("../img/bombilla2.png");
-        background-position: center;
-      }
-      .item5 {
-        background-image: url("../img/bombillon.jpg");
-        background-size: 320px;
-      }
-      .item6 {
-        background-image: url("../img/bombilla-picoloro.jpg");
-        background-size: 320px;
-      }
-      .item7 {
-        background-image: url("../img/yerba2.jpg");
-      }
-      .item8 {
-        background-image: url("../img/baldo.jpg");
-      }
-      .item9 {
-        background-image: url("../img/canariasespecial.jpg");
-      }
     }
-  }
+  } 
 }
 
 /*Informacion*/
@@ -148,6 +111,12 @@ section div img {
       text-align: center;
       flex-direction: column;
       justify-content: space-between;
+      h3{
+        background-color: cornsilk;
+        border: cornsilk 5px solid;
+        border-radius: 20px;
+        text-align: justify;
+      }
     }
   }
 }

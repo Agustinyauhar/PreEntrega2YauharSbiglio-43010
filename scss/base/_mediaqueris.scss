@@ -1,35 +1,49 @@
-@media screen and (min-width: 350px) and (max-width: 1250px){
-.contenedor{
-  height: auto;
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 350px) and (max-width: 1250px) {
+  .contenedor {
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 700px){
-  .video-informacion{
-    .video-informacion1{
+@media screen and (max-width: 700px) {
+  .video-informacion {
+    .video-informacion1 {
       flex-direction: column;
     }
   }
 }
 
-@media screen and (max-width: 1300px){
- .logo-nosotros img {
-  width: 60%;
- }
+@media screen and (max-width: 1300px) {
+  .logo-nosotros img {
+    width: 60%;
+  }
 }
 
-@media screen and (max-width: 750px){
-  .main-contacto{
-    .title-nosotros{
+@media screen and (max-width: 750px) {
+  .main-contacto {
+    .title-nosotros {
       font-size: 30px;
     }
-    .nosotros{
+    .nosotros {
       padding: 10px;
       width: 60%;
       align-items: center;
       width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-p {
+    section {
+      .mproducto {
+        .galeria {
+          .item {
+            margin-left: 0;
+          }
+        }
+      }
     }
   }
 }

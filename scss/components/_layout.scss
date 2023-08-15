@@ -13,6 +13,8 @@ body {
   padding-top: 35px;
   #text-index {
     font-size: 20px;
+    text-shadow: 0 0 3px;
+    color:black
   }
 }
 .productos {
@@ -159,6 +161,8 @@ section div img {
     flex: 1;
     text-align: center;
     padding: 20px;
+    height: 400px;
+    width: 400px;
   }
   .text-nosotros {
     flex: 1;
@@ -167,7 +171,7 @@ section div img {
     text-shadow: 0 0 3px;
     font-family: "Petit Formal Script", cursive;
     text-align: center;
-    margin-right: 135px;
+    margin: 20px;
     background-color: cornsilk;
     border: cornsilk 5px solid;
     border-radius: 20px;
@@ -183,8 +187,11 @@ section div img {
     text-align: center;
     margin-top: 70px;
     font-size: 35px;
+    text-shadow: 0 0 3px;
+    color: black;
   }
   .nosotros {
+    margin-top: 70px;
     border: 8px solid black;
     text-align: center;
     width: 40%;

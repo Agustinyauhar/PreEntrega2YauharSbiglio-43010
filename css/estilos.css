@@ -31,7 +31,9 @@ body {
   font-size: 35px;
   padding-top: 35px; }
   .bienvenidos #text-index {
-    font-size: 20px; }
+    font-size: 20px;
+    text-shadow: 0 0 3px;
+    color: black; }
 
 .productos {
   margin-top: 150px;
@@ -151,7 +153,9 @@ section div img {
   .contenedor .logo-nosotros {
     flex: 1;
     text-align: center;
-    padding: 20px; }
+    padding: 20px;
+    height: 400px;
+    width: 400px; }
   .contenedor .text-nosotros {
     flex: 1;
     padding: 20px;
@@ -159,7 +163,7 @@ section div img {
     text-shadow: 0 0 3px;
     font-family: "Petit Formal Script", cursive;
     text-align: center;
-    margin-right: 135px;
+    margin: 20px;
     background-color: cornsilk;
     border: cornsilk 5px solid;
     border-radius: 20px; }
@@ -173,8 +177,11 @@ section div img {
   .main-contacto .title-nosotros {
     text-align: center;
     margin-top: 70px;
-    font-size: 35px; }
+    font-size: 35px;
+    text-shadow: 0 0 3px;
+    color: black; }
   .main-contacto .nosotros {
+    margin-top: 70px;
     border: 8px solid black;
     text-align: center;
     width: 40%;
@@ -201,7 +208,7 @@ footer {
     flex-direction: column; } }
 
 @media screen and (max-width: 700px) {
-  .video-informacion1 {
+  .video-informacion .video-informacion1 {
     flex-direction: column; } }
 
 @media screen and (max-width: 1300px) {
@@ -209,6 +216,10 @@ footer {
     width: 60%; } }
 
 @media screen and (max-width: 750px) {
-  .nosotros {
+  .main-contacto .title-nosotros {
+    font-size: 30px; }
+  .main-contacto .nosotros {
     padding: 10px;
-    width: 60%; } }
+    width: 60%;
+    align-items: center;
+    width: 90%; } }

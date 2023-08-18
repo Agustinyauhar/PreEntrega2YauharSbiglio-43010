@@ -29,17 +29,21 @@ body {
 .bienvenidos {
   text-align: center;
   font-size: 35px;
-  padding-top: 35px; }
+  padding: 30px;
+  background-color: wheat;
+  border-top: 6px black double;
+  border-bottom: 6px black double; }
   .bienvenidos #text-index {
     font-size: 20px;
-    text-shadow: 0 0 3px;
+    text-shadow: 0 0 2px;
     color: black; }
 
 .productos {
   margin-top: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  margin-bottom: 300px;
+  justify-content: space-around; }
   .productos .div-index {
     display: flex;
     justify-content: space-evenly;
@@ -47,8 +51,10 @@ body {
     flex-wrap: wrap; }
     .productos .div-index .div-productosI {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       width: 250px;
+      background-color: wheat;
       border: 2px solid black;
       margin: 20px;
       height: 350px;

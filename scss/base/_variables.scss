@@ -1,0 +1,31 @@
+$font-size:
+35px,
+20px,
+14px,
+25px,
+19px;
+
+%background{
+    background-image: url("../img/fondo-.jpg");
+    background-size: cover;
+    background-color: cornsilk;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+}
+
+@mixin flex ($flex,$justify,$aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin direction ($flex,$direction,$justify,$aling){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+
+   

@@ -1,21 +1,16 @@
 /*Index*/
 body {
-  background-image: url("../img/fondo-.jpg");
-  background-size: cover;
-  background-color: cornsilk;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
+  @extend %background;
 }
 .bienvenidos {
   text-align: center;
-  font-size: 35px;
+  font-size:nth($font-size, 1 ) ;
   padding: 30px;
   background-color: wheat;
   border-top: 6px black double;
   border-bottom: 6px black double;
   #text-index {
-    font-size: 20px;
+    font-size:nth($font-size, 2 ) ;
     text-shadow: 0 0 2px;
     color:black
   }
@@ -32,22 +27,20 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     .div-productosI {
-      display: flex;
-      justify-content: center;
+      @include flex (flex, center, center);
       flex-wrap: wrap;
       width: 250px;
       background-color: wheat;
       border: 2px solid black;
       margin: 20px;
-      height: 350px;
-      align-items: center;
+      height: 385px; 
       .boton {
         background-color: #d87320;
         color: white;
         border: none;
         padding: 8px 16px;
         cursor: pointer;
-        font-size: 14px;
+        font-size:nth($font-size, 3 ) ;
         align-items: center;
         margin-top: 10px;
         .imagenbombilla {
@@ -77,7 +70,7 @@ section div img {
         background-color: rgba(0, 0, 0, 0.212);
         color: white;
         text-shadow: 0 0 3px;
-        font-size: 25px;
+        font-size:nth($font-size, 4 ) ;
         padding: 50px 20px;
         font-family: "Petit Formal Script", cursive;
       }
@@ -105,10 +98,7 @@ section div img {
     margin-top: 40px;
   }
   .video-informacion1 {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
+    @include direction (flex, row, space-evenly, center);
     margin-top: 40px;
     .div-informacion {
       display: flex;
@@ -128,9 +118,7 @@ section div img {
 }
 /*Nosotros*/
 .contenedor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex (flex, center, center);
   height: 100vh;
   .logo-nosotros {
     flex: 1;
@@ -142,7 +130,7 @@ section div img {
   .text-nosotros {
     flex: 1;
     padding: 20px;
-    font-size: 20px;
+    font-size:nth($font-size, 2 ) ;
     text-shadow: 0 0 3px;
     font-family: "Petit Formal Script", cursive;
     text-align: center;
@@ -154,14 +142,11 @@ section div img {
 }
 /*Contacto*/
 .main-contacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include direction (flex, column, center, center);
   .title-nosotros {
     text-align: center;
     margin-top: 70px;
-    font-size: 35px;
+    font-size:nth($font-size, 1 ) ;
     text-shadow: 0 0 3px;
     color: black;
   }
@@ -170,7 +155,7 @@ section div img {
     border: 8px solid black;
     text-align: center;
     width: 40%;
-    font-size: 19px;
+    font-size:nth($font-size, 5 ) ;
     background-color: cornsilk;
     border-radius: 15px;
     padding: 5px;

@@ -255,6 +255,16 @@ margin-bottom: 20%;
   border-radius: 20px;
 }
 
+@media (max-width: 1024px) {
+  .ui {
+      flex-direction: column-reverse;
+  }
+
+  .container-left, .container-right {
+      width: 100%;
+  }
+}
+
 /*Media-Queris*/
 @media screen and (min-width: 350px) and (max-width: 1250px){
 .contenedor{
